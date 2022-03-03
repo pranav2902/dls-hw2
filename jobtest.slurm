@@ -11,6 +11,6 @@ module purge
 module load anaconda3/2020.07
 eval "$(conda shell.bash hook)"
 conda activate
-cd /home/ps4521
+cd /scratch/ps4521
 
 python test.py
