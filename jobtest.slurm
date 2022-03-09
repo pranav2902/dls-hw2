@@ -3,8 +3,8 @@
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=4
 #SBATCH --output=%x.out
-#SBATCH --mem=32GB
-#SBATCH --time=4:00:00
+#SBATCH --mem=64GB
+#SBATCH --time=6:00:00
 #SBATCH --gres=gpu:1
 
 module purge
@@ -13,4 +13,4 @@ eval "$(conda shell.bash hook)"
 conda activate
 cd /scratch/ps4521
 
-python test.py
+python DLSQ4.py
